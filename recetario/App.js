@@ -7,14 +7,26 @@
  */
 
 import React from 'react';
+import { SafeAreaView, StyleSheet, Platform } from "react-native";
 import SearchBar from './src/components/SearchBar';
+import colors from './src/utils/colors';
 
 
 const App = () => {
   
   return (
-    <SearchBar/>
+      <SafeAreaView style={styles.container}>
+        <SearchBar/>
+      </SafeAreaView>
   )
 }
 
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: colors.BG, 
+    flex:1,
+    // marginTop: Platform.OS === 'ios' ? 50:0,
+    
+  }
+})
 export default App;
