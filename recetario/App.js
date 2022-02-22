@@ -10,6 +10,7 @@ import React from 'react';
 import { SafeAreaView, StyleSheet, Platform } from "react-native";
 import SearchBar from './src/components/SearchBar';
 import colors from './src/utils/colors';
+import ListItem from './src/components/ListItem';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
   return (
       <SafeAreaView style={styles.container}>
         <SearchBar/>
+        <ListItem/>
       </SafeAreaView>
   )
 }

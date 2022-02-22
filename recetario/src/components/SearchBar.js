@@ -6,7 +6,7 @@ const SearchBar = () => {
     return (
         <View style={styles.inputSearch}>
             <TextInput style={styles.textSearch} placeholder="What do you want to eat?" placeholderTextColor="#ffffff"/>
-        </View>
+        </View> 
     )
 }
 
