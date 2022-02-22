@@ -4,7 +4,7 @@ import React from 'react'
 const ListItem = () => {
     return (
         <View>
-            <Image source={require('../img/pizza.png')}/>
+            {/* <Image source={require('../img/pizza.png')}/> */}
             <Text>ListItem</Text>
         </View>
     )

@@ -174,7 +174,7 @@ export default {
     },  
     6: {
         name: 'Omelette',
-        image: ' <Image source={require('..img/omelette.jpg')} />',
+        image: ' src/img/omelette.jpg',
         servings: 2,
         category: 'Recent',
         ingredients: {
