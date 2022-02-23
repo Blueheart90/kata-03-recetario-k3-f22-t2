@@ -76,7 +76,7 @@ export default [
     },
     {
         id: 3,
-        name: 'Galletas de chocolate',
+        name: 'Galletas',
         image: 'https://t2.rg.ltmcdn.com/es/posts/6/8/2/galletas_de_mantequilla_con_chocolate_55286_600.jpg',
         servings: 10,
         category: 'Trending',

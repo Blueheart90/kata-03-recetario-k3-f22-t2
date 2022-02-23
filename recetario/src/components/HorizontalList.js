@@ -8,15 +8,17 @@ const HorizontalList = () => {
   return (
     <View>
         <Text style={styles.title}>TRENDING</Text>
-        <View >
-          <FlatList
-            horizontal
-            data={recipes}
-            renderItem={({item}) => <ListItem recipe={item} />}
-            keyExtractor={recipe => recipe.id}
-            style={styles.views}
-          />
-        </View>
+      <View>
+        <FlatList
+          horizontal
+          data={recipes}
+          renderItem={({item}) => <ListItem recipe={item} />}
+          keyExtractor={recipe => recipe.id}
+          showsHorizontalScrollIndicator={true}
+        />
+      </View>
+
+
     </View>
   )
 }
@@ -28,9 +30,5 @@ const styles = StyleSheet.create({
     color: colors.TITLE,
     fontSize: 25,
     paddingBottom: 10
-  },
-  views:{
-      flexDirection: "row", 
- 
-  },
+  }
 })
