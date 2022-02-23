@@ -1,7 +1,8 @@
-export default {
-    1: {
+export default [
+    {
+        id: 1,
         name: 'Pizza',
-        image: 'src/img/pizza.png',
+        image: 'https://www.saborusa.com/wp-content/uploads/2019/10/Animate-a-disfrutar-una-deliciosa-pizza-de-salchicha-Foto-destacada.png',
         servings: 4,
         category: 'Trending',
         ingredients: {
@@ -36,45 +37,47 @@ export default {
         }
 
     },
-    2: {
-        name: 'Paella de marisco',
-        image: 'src/img/paella.png',
+    {
+        id: 2,
+        name: 'Arroz rojo',
+        image: 'https://i.imgur.com/tKSjPKd.jpg',
         servings: 6,
         category: 'Recent',
         ingredients: {
             1: { 
-                nameIngredient: 'Arroz redondo',
+                nameIngredient: 'Arroz largo',
                 cant: '480 gr.',
             },
             2: {
-                nameIngredient: 'Caldo de marisco',
-                cant: '1 litro',
+                nameIngredient: 'Aceite',
+                cant: '1 cucharada sopera',
             },
             3: {
-                nameIngredient: 'Gambas/camarones',
-                cant: '8 unidades',
+                nameIngredient: 'Tomate',
+                cant: '4 unidades',
             },
             4: {
-                nameIngredient: 'Sepia',
+                nameIngredient: 'Cebolla',
                 cant: '1 unidad',
             },
             5: {
-                nameIngredient: 'Mejillones',
-                cant: '8 unidades',
+                nameIngredient: 'Ajo',
+                cant: '2 unidades',
             },
             6: {
-                nameIngredient: 'Colorante/azafrán',
+                nameIngredient: 'Sal',
                 cant: '1 cucharadita',
             },
             7: {
-                nameIngredient: 'Sofrito',
-                cant: '500 ml.',
-            } 
+                nameIngredient: 'Revuelto de verduras',
+                cant: '1 bolsa'
+            }
         }
     },
-    3: {
+    {
+        id: 3,
         name: 'Galletas de chocolate',
-        image: 'src/img/Galletas-crujientes.jpg',
+        image: 'https://t2.rg.ltmcdn.com/es/posts/6/8/2/galletas_de_mantequilla_con_chocolate_55286_600.jpg',
         servings: 10,
         category: 'Trending',
         ingredients: {
@@ -96,9 +99,10 @@ export default {
             },
         }
     },
-    4: {
-        name: 'Pan dulce',
-        image: 'src/img/pandulce.jpg',
+    {
+        id: 4,
+        name: 'Budín dulce',
+        image: 'https://www.donrecetas.com/wp-content/uploads/2020/03/BUDIN-DE-VAINILLA.jpg',
         servings: 2,
         category: 'Trending',
         ingredients: {
@@ -132,9 +136,10 @@ export default {
             },
         }
     },
-    5: {
+    {
+        id: 5,
         name: 'Aborrajados',
-        image: 'src/img/aborrajados.jpg',
+        image: 'https://i.imgur.com/xHdM8lx.jpg',
         servings: 2,
         category: 'Trending',
         ingredients: {
@@ -172,9 +177,10 @@ export default {
             },
         }   
     },  
-    6: {
+    {
+        id: 6,
         name: 'Omelette',
-        image: ' src/img/omelette.jpg',
+        image: 'https://t1.rg.ltmcdn.com/es/posts/0/2/6/omelette_de_huevo_a_la_mexicana_10620_600.jpg',
         servings: 2,
         category: 'Recent',
         ingredients: {
@@ -202,7 +208,7 @@ export default {
                 nameIngredient: 'Aceite',
                 cant: '1 cucharadita',
             },
-           
+            
         }
     },
-}
+]
