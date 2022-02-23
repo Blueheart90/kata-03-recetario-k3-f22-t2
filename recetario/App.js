@@ -20,7 +20,6 @@ const App = () => {
       <SafeAreaView style={styles.container}>
         <SearchBar/>
         <HorizontalList/>
-        {/* <ListItem/> */}
       </SafeAreaView>
   )
 }

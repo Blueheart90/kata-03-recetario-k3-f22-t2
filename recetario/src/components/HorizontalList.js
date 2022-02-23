@@ -1,18 +1,30 @@
-import { StyleSheet, Text, View, FlatList, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
 import recipes from '../utils/recipes';
 import ListItem from './ListItem';
 import colors from '../utils/colors';
 
 const HorizontalList = () => {
+  const Trending = recipes.filter(recipe => recipe.category == 'Trending');
+  const Recent = recipes.filter(recipe => recipe.category == 'Recent');
   return (
     <View>
-        <Text style={styles.title}>TRENDING</Text>
       <View>
+        <Text style={styles.title}>TRENDING</Text>
         <FlatList
           horizontal
-          data={recipes}
-          renderItem={({item}) => <ListItem recipe={item} />}
+          data={Trending}
+          renderItem={({item}) => <ListItem  recipe={item} />}
+          keyExtractor={recipe => recipe.id}
+          showsHorizontalScrollIndicator={true}
+        />
+      </View>
+      <View>
+        <Text style={styles.title}>RECENT</Text>
+        <FlatList
+          horizontal
+          data={Recent}
+          renderItem={({item}) => <ListItem  recipe={item} />}
           keyExtractor={recipe => recipe.id}
           showsHorizontalScrollIndicator={true}
         />

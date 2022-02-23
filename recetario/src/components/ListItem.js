@@ -2,10 +2,10 @@ import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 
 
-const ListItem = ({recipe}) => {
+const ListItem = ( {recipe}) => {
     return (
         <View style={styles.container}>
-            <Image style={styles.img} source={{ uri: recipe.image}}/>
+            <Image style={[recipe.category == 'Trending' ? styles.imgTreding : styles.imgRecent, {borderRadius: 10}]}  source={{ uri: recipe.image}}/>
             <Text style={styles.title}>{recipe.name}</Text>
         </View>
     )
@@ -19,10 +19,13 @@ const styles = StyleSheet.create({
         marginTop: 5,
         fontSize: 15
     },
-    img:{
-        width: 115, 
-        height: 115,
-        borderRadius: 10,
+    imgTreding:{
+        width:   115 , 
+        height:  115 ,
+    },
+    imgRecent: {
+        width: 150,
+        height: 150,
     },
     container: {
         paddingHorizontal: 10,
