@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     left: 25,
   },
   title: {
-    fontSize: 40,
+    fontSize: 39,
     color: 'white',
   },
   subtitle: {
